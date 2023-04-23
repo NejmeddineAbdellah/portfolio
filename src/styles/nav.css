@@ -1,0 +1,40 @@
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    button {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.open {
+        display: flex;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
