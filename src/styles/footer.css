@@ -65,8 +65,8 @@
 
 .footer-dark .item.social > a {
     font-size:36px;
-    width:36px;
-    height:36px;
+    width:26;
+    height:26px;
     line-height:36px;
     display:inline-block;
     text-align:center;
@@ -84,7 +84,7 @@
 
 .footer-dark .copyright {
     text-align:center;
-    padding-top:24px;
+    padding-top:15px;
     opacity:0.3;
     font-size:13px;
     margin-bottom:0;

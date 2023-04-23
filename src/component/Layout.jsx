@@ -21,7 +21,7 @@ function Header() {
         { label: 'Formations', icon: 'pi pi-fw pi-calendar',command: () => {navigate('/formation')} },
         { label: 'Experiences', icon: 'pi pi-fw pi-pencil',command: () => {navigate('/experience')} },
         { label: 'Projects', icon: 'pi pi-fw pi-file' },
-        { label: 'Certifications', icon: 'pi pi-fw pi-cog' }
+        { label: 'Certifications', icon: 'pi pi-fw pi-cog',command: () => {navigate('/certificat')}}
     ];
 
     return (
@@ -61,9 +61,9 @@ export default function Footer() {
     }
 
     return (
-        <div className="footer-dark fixed-bottom" style={{ marginTop: "50px",position: 'relative'}}>
+        <div className="footer-dark fixed-bottom" style={{ marginTop: "50px",position: 'relative',bottom:0}}>
             <footer>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}></div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}></div>
                 <div className="mx-8" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 </div>
 
@@ -81,7 +81,7 @@ export default function Footer() {
 
                         <div className="col item social">
                             <a href="#"><RiTelegramFill /></a>
-                            <a href="https://www.linkedin.com/in/badr-ait-hammou-24357b233/"><TiSocialLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/abdellahnejmeddine/"><TiSocialLinkedin /></a>
                             <a href="https://twitter.com/Badr66270786"><AiFillTwitterCircle /></a>
                         </div>
                     </div>
