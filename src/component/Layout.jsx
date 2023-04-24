@@ -68,7 +68,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <p className="copyright">NEJMEDDOINE © 2023</p>
+                    <p className="copyright">NEJMEDDINE © 2023</p>
                 </div>
 
 
