@@ -5,6 +5,7 @@ import Accueil from './component/Accueil';
 import Experience from './component/Experience';
 import Formation from './component/Formation';
 import Certification from './component/Certificats';
+import Projet from './component/Projects';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/experience" element={<Experience/>} />
             <Route path="/formation" element={<Formation/>} />
             <Route path="/certificat" element={<Certification/>} />
+            <Route path="/project" element={<Projet/>} />
         </Routes>
         <Footer/>
       </Router>

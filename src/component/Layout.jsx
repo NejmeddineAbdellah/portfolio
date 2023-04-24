@@ -15,18 +15,24 @@ import {useNavigate} from "react-router-dom";
 
 function Header() {
     const navigate = useNavigate();
+    const [activeItem, setActiveItem] = useState(null);
+
 
     const items = [
         { label: 'Accueil', icon: 'pi pi-fw pi-home',command: () => {navigate('/')}},
         { label: 'Formations', icon: 'pi pi-fw pi-calendar',command: () => {navigate('/formation')} },
         { label: 'Experiences', icon: 'pi pi-fw pi-pencil',command: () => {navigate('/experience')} },
-        { label: 'Projects', icon: 'pi pi-fw pi-file' },
-        { label: 'Certifications', icon: 'pi pi-fw pi-cog',command: () => {navigate('/certificat')}}
+        { label: 'Projects', icon: 'pi pi-fw pi-microsoft',command: () => {navigate('/project')} },
+        { label: 'Certifications', icon: 'pi pi-fw pi-book',command: () => {navigate('/certificat')}}
     ];
+    
+  const handleTabChange = (event) => {
+    setActiveItem(event.value);
+  }
 
     return (
         <div className="card">
-            <TabMenu model={items} />
+                <TabMenu model={items} activeItem={activeItem} onTabChange={handleTabChange} />
         </div>
     )
 }
@@ -61,7 +67,7 @@ export default function Footer() {
     }
 
     return (
-        <div className="footer-dark fixed-bottom" style={{ marginTop: "50px",position: 'relative',bottom:0}}>
+        <div className="footer-dark fixed-bottom" style={{ marginTop: "8%",position: 'relative'}}>
             <footer>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}></div>
                 <div className="mx-8" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -73,20 +79,18 @@ export default function Footer() {
                     <div className="text-center mt-5">
                         <div className=" item text tex">
 
-                            <h3>Contact Me</h3>
-                            <p>Feel free to reach out to me if you have any questions or if you'd like to work together on a project.</p>
+                            <h3>Call Me</h3>
+                            <p>Feel free to reach out to me .</p>
                         </div>
 
 
 
                         <div className="col item social">
-                            <a href="#"><RiTelegramFill /></a>
                             <a href="https://www.linkedin.com/in/abdellahnejmeddine/"><TiSocialLinkedin /></a>
-                            <a href="https://twitter.com/Badr66270786"><AiFillTwitterCircle /></a>
                         </div>
                     </div>
 
-                    <p className="copyright">B.A.H © 2023</p>
+                    <p className="copyright">NEJMEDDOINE © 2023</p>
                 </div>
 
 

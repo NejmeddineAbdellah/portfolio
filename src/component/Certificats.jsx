@@ -15,11 +15,10 @@ function Certification() {
 
 
   return (
-    <div className='container mt-4'>
-      <section className='section' >
-        <div className='project-container row'>
+    <div class='container w-100'>
+        <div class='project-container row' style={{ marginTop: 40 }}>
 
-          <div className='project-card col-12 col-md-4 mb-4'>
+          <div className='project-card col-lg-4 col-md-4 col-sm-12 mb-4'>
             <Card header={office} className="card" >
               <div className='project-title card-title h5' style={{ textAlign: "left" }}>
                 Microsoft Office Specialist Expert
@@ -35,8 +34,7 @@ function Certification() {
           </div>
 
 
-
-          <div className='project-card col-12 col-md-4 mb-4'>
+          <div className='project-card col-lg-4 col-md-4 col-sm-12 mb-4'>
             <Card header={devops} className="card" >
               <div className='project-title card-title h5' style={{ textAlign: "left" }}>
                   Spécialisation DevOps, Cloud, and Agile Foundations
@@ -52,7 +50,7 @@ function Certification() {
           </div>
 
           
-          <div className='project-card col-12 col-md-4 mb-4'>
+          <div className='project-card col-lg-4 col-md-4 col-sm-12 mb-4'>
             <Card header={react} className="card" >
               <div className='project-title card-title h5' style={{ textAlign: "left" }}>
                 Full-Stack Web Development with React
@@ -68,9 +66,7 @@ function Certification() {
             </Card>
           </div>
 
-
         </div>
-      </section>
     </div>
   )
 }
